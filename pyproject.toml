@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "my_fastapi_app"
+version = "0.1.0"
+description = "A FastAPI application with SQLAlchemy"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.111.0"
+uvicorn = "^0.18.0"
+sqlalchemy = "^2.0.31"
+pydantic = "^1.10.0"
+alembic = "^1.7.0"
+psycopg2-binary = "^2.9.3"
+starlette = "^0.37.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.0"
+httpx = "^0.23.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
